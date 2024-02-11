@@ -1,0 +1,4 @@
+aws:
+  paramstore:
+    region: null
+    endpoint: "http://${LOCALSTACK_HOSTNAME}:4566"

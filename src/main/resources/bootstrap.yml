@@ -1,0 +1,8 @@
+aws:
+  paramstore:
+    prefix: /ash
+    profileSeparator: /
+    region: eu-west-1
+    enabled: true
+    fail-fast: true
+    default-context: localstack

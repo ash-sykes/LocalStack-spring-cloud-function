@@ -1,0 +1,8 @@
+logging:
+  level:
+    io.awspring.cloud.paramstore.AwsParamStorePropertySource: DEBUG
+
+com:
+  ash:
+    localstack:
+      endpoint: "http://${LOCALSTACK_HOSTNAME}:4566"

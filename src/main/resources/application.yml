@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: localstack
+
+com:
+  ash:
+    localstack:
+      appName: ${spring.application.name}
+      env: ${SPRING_PROFILES_ACTIVE}
+      envId: ${ENV_ID}
+---
+spring:
+  config:
+    activate:
+      on-profile: "!test"
+    import: "aws-parameterstore:"
